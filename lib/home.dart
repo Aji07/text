@@ -12,7 +12,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:Text("Hello World",
+        title:Text(" World",
                style: TextStyle(backgroundColor: Colors.green,fontWeight: FontWeight.bold),),
         backwardsCompatibility: false,centerTitle: false, backgroundColor: Colors.green,
         actions: [
