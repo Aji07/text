@@ -23,7 +23,7 @@ class ConsumerData {
  final String first_name;
  final String last_name;
  final String username;
- final List<dynamic> billing;
+ //final List<dynamic> billing;
 
 
  ConsumerData({
@@ -31,7 +31,7 @@ class ConsumerData {
    required this.first_name,
    required this.last_name,
    required this.username,
-  required this.billing,
+   //required this.billing,
  });
 
   factory ConsumerData.fromJson(Map<String , dynamic>json)
@@ -41,7 +41,7 @@ class ConsumerData {
     first_name:json['first_name'],
     last_name:json['last_name'],
     username:json['username'],
-    billing:json['billing']as List<dynamic>,
+   //billing:json['billing'],
   );
 }
 }
@@ -84,7 +84,7 @@ class _HomeState extends State<Home> {
           future: futureConsumerData,
           builder: (context, snapshot) {
             if (snapshot.hasData) {
-              print("${snapshot.data!.billing[1]}");
+              //print("${snapshot.data!.billing[1]}");
               return 
                 Column(
                   children: [
